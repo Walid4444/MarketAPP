@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.shaymaa.disegnnew.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/ic_menu_camera"
+                android:id="@+id/profile_id"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" >
+
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="horizontal">-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+
+
+                    <!--</LinearLayout>-->
+
+
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="4"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:src="@drawable/heart"&ndash;&gt;-->
+
+
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                            <!--<android.support.v7.widget.SearchView-->
+
+                                <!--android:id="@+id/mSearch"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--app:submitBackground="@color/text_primary"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--app:defaultQueryHint="Search.."-->
+                                <!--&gt;</android.support.v7.widget.SearchView>-->
+                        <!--</LinearLayout>-->
+
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:orientation="horizontal">-->
+
+
+                            <!--<ImageView-->
+                                <!--android:padding="10dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:src="@drawable/cart"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+
+
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_weight="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <android.support.v7.widget.SearchView
+                                android:id="@+id/mSearch"
+                                app:paddingEnd="@dimen/activity_horizontal_margin"
+                                android:textAlignment="viewStart"
+                                android:layout_width="match_parent"
+                                app:submitBackground="@color/text_primary"
+                                 android:layout_height="wrap_content"
+                                app:defaultQueryHint="Search.."
+                                 ></android.support.v7.widget.SearchView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_weight=".5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+
+                            <ImageView
+                                android:padding="10dp"
+                                 android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cart"
+                                />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_main" />
+
+
+</android.support.design.widget.CoordinatorLayout>
